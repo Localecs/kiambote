@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+			<title>Kiambote - Debates</title>
+			<meta charset="UTF-8">
+			<link type="text/css" rel="stylesheet" href="estilos/layout.css">
+			<script type="text/javascript" src="js/jQuery.js"></script>
+			<script type="text/javascript" src="js/acao.js"></script>
+			
+			
+
+			<script language="javascript">
+		$(document).ready(function(){
+        $('#comenta').click(function(){
+        $('.comentar2').slideDown('slow');
+        	
+        });
+			});	
+
+		$(document).ready(function(){
+        $('#bot_comentar').click(function(){
+        $('.comentar2').slideUp('slow');
+        	comentar2.style.display="none";
+        	comentario_area.style.display="none";
+        	bot_comentar.style.display="none";
+        	bot_cancelar.style.display="none";
+        });
+			});	
+
+		$(document).ready(function(){
+        $('#bot_cancelar').click(function(){
+        $('.comentar2').slideUp('slow');
+        	comentar2.style.display="none";
+        	comentario_area.style.display="none";
+        	bot_comentar.style.display="none";
+        	bot_cancelar.style.display="none";
+        });
+			});	
+
+	</script>
+
+
+
+</head>
+<body>
+	<header id="header">
+			<div class="wrap"><!--CENTRALIZA TUDO QUE ESTIVER DENTRO DO HEADER-->
+					<div id="logo"><img src="img/logo.png"></div>		
+						<div id="menu_div">
+
+						<nav id="menu">
+						<ul>
+							<li><a href="index.html">Inicio</a>
+							</li>
+							<li><a href="entretenimento.html">Entretenimento</a>
+							</li>
+							<li><a href="kinformacao.html">K-informação</a></li>
+							<li><a href="chat.html">Chat</a></li>
+							<li><a href="contacto.html">Contacte-nos</a></li>
+						</ul>	
+					</nav>
+					<div class="info_user"><a href="#" id="abrir">Entrar | Cadastro</a></div>
+					
+			</div>
+	</header>
+
+<div class="wrap"> <!--CENTRALIZA TODA PAGINA EXCEPTO O HEADER-->
+	
+	<section id="main_chat">
+		<h1 class="titulo_entre"> K-INFORMAÇÃO</h1> <input type="submit" value="PARTILHAR" id="botao_novo_debate">
+	</section>
+
+	<section id="debate_news">
+
+		<article  class="comentar1"> 
+			<article class="l2"> <img src="img/ht.png" width="160" height="110" alt=""> </article>
+					<article class="r2">
+						<h2>Lorem ipsum is the simple text</h2> 
+						<p class="k_info"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				
+						<div class="sobre_dest1"> 
+							
+
+							Por: Eliano | Comentarios(1150) | <a href="#" id="comenta">Comentar</a> | Em: 2012-01-01 10:45:58 <a href="#" onclick="document.getElementById('pop').style.display='block';">Ver   </a> 
+						</div>
+							
+					</article> 
+		</article>
+
+		<article  class="comentar2"> 
+			<form>
+							<textarea name="chat"  id="comentario_area"></textarea> <input type="submit" value="Comentar" id="bot_comentar">
+							<input type="button" value="Cancelar" id="bot_cancelar">
+						</form>
+						
+		</article>
+
+		
+				
+
+	</section>
+
+
+	
+	
+</div>
+		<footer id="rodape"><div class="wrap2"> Kiambote &copy; 2012 - Todos os direitos reservdos aos EFBD | <a href="">Sobre</a> | <a href="">Contacto</a> </div></footer>
+        
+       <div id="nero">
+	</div>
+		<div class="messaggio">
+		<img src="img/fechar.gif" alt="Botão de fechar"  id="chiudi" />
+		<div id="nav_lightbox">
+			<ul> 
+				<a href="#"><li id="login">LOGIN</li> </a>
+				<a href="#"><li id="cadastro">CADASTRO</li> </a>
+			</ul>
+		</div>
+		<div id="lightbox2"> 
+				<h2>Faça o Login! </h2>
+			<form> 
+				<table id="formulario"> 
+					<tr> <td>E-mail </td> <td><input type="email"> </td> </tr>
+					<tr> <td>Password </td> <td><input type="password">  </td> </tr>
+					<tr> <td></td> <td><input type="submit" id="cadastro_bt" value="ENTRAR"> </td> </tr>
+				</table>
+			</form>
+		</div>
+		<div id="lightbox3"> <!--DIV onde fica o formulario de cadastro!-->
+			<h2>Faça o seu cadastro! </h2>
+			<table id="formulario">
+			<tr> <td>Nome</td> <td><input type="text"></td> </tr>
+			<tr> <td>E-mail</td> <td><input type="email"> </td> </tr>
+			<tr> <td>Sexo</td> <td><select id="select_list" name="sexo" size="1">
+			<option value="masculino">Masculino</option>
+	  		<option value="femenino">Femenino</option>
+			</select></td> </tr>
+			<tr> <td>Nacionalidade</td> <td><select id="select_list" name="pais">
+			<option value="angola">Angola</option>
+	  		<option value="brasil">Brasil</option>
+			</select></td> </tr>
+			<tr> <td>Password</td> <td><input type="password"> </td> </tr>
+			<tr> <td>Password</td> <td><input type="password"> </td> </tr>
+			<tr> <td></td> <td><input type="submit" value="CADASTRAR" id="cadastro_bt"></td> </tr>
+			</table>
+		</div>
+		<script language="javascript">
+			$("#lightbox3").hide();
+			$("#cadastro").click(function(){
+				$("#lightbox2").hide();
+				$("#lightbox3").show();
+			});
+			$("#login").click(function(){
+				$("#lightbox3").hide();
+				$("#lightbox2").show();
+			});
+		</script>
+ 
+        
+</body>
+</html>
