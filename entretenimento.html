@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+			<title>Kiambote - Entretenimento</title>
+			<meta charset="UTF-8">
+			<link type="text/css" rel="stylesheet" href="estilos/layout.css">
+			<script type="text/javascript" src="js/jQuery.js"></script>
+			<script type="text/javascript" src="js/acao.js"></script>
+			
+</head>
+<body>
+	<header id="header">
+			<div class="wrap"><!--CENTRALIZA TUDO QUE ESTIVER DENTRO DO HEADER-->
+					<div id="logo"><img src="img/logo.png"></div>		
+					<div id="menu_div">
+
+						<nav id="menu">
+						<ul>
+							<li><a href="index.html">Inicio</a>
+							</li>
+							<li><a href="entretenimento.html">Entretenimento</a>
+							</li>
+							<li><a href="kinformacao.html">K-informação</a></li>
+							<li><a href="chat.html">Chat</a></li>
+							<li><a href="contacto.html">Contacte-nos</a></li>
+						</ul>	
+					</nav>
+					<div class="info_user"><a href="#" id="abrir">Entrar | Cadastro</a></div>
+					
+			</div>
+	</header>
+
+<div class="wrap"> <!--CENTRALIZA TODA PAGINA EXCEPTO O HEADER-->
+	
+		
+	
+	<section id="slid"> <!-- DESTAQUE PRINCIPAL DA PAGINA ENTRETENIMENTO -->
+
+		<div id="lado_ass1">
+			<img src="img/02.jpg" width="269" height="190"/>
+		</div>
+
+		<div id="entre_conteudo">
+   			<article>
+   				<h1 class="titulo_dest">Entretenimento baby! </h1>
+   			</article>
+		</div>
+
+  	</section> <!-- FIM DA 1ª SECTION -->
+
+  	<section> <!-- CONTERÁ AS 3 DIV'S ANIMADAS  -->
+  		<div id="div_animada1"> <!--  1ª DIV ANIMADA -->
+  			<img src="img/ht.png" width="290" height="180">
+  		</div>
+
+  		<div id="div_animada2"> <!--  2ª DIV ANIMADA -->
+  			<img src="img/ht.png" width="290" height="180">
+  		</div>
+
+  		<div id="div_animada3"> <!--  3ª DIV ANIMADA -->
+  			<img src="img/ht.png" width="290" height="180">
+  		</div>
+  	</section> <!-- FIM DA SECTION DAS 3 DIVS ANIMADAS -->
+
+
+	<section id="jogo">
+		<h3 class="jogo_h">  </h3>
+	</section>
+
+</div> <!--FIM DA DIV WRAP-->
+
+</div>
+		<footer class="bottom_footer"><div class="wrap2"> Kiambote &copy; 2012 - Todos os direitos reservdos aos EFBD | <a href="">Sobre</a> | <a href="">Contacto</a> </div></footer>
+        
+        <div id="nero">
+	</div>
+		<div class="messaggio">
+		<img src="img/fechar.gif" alt="Botão de fechar"  id="chiudi" />
+		<div id="nav_lightbox">
+			<ul> 
+				<a href="#"><li id="login">LOGIN</li> </a>
+				<a href="#"><li id="cadastro">CADASTRO</li> </a>
+			</ul>
+		</div>
+		<div id="lightbox2"> 
+				<h2>Faça o Login! </h2>
+			<form> 
+				<table id="formulario"> 
+					<tr> <td>E-mail </td> <td><input type="email"> </td> </tr>
+					<tr> <td>Password </td> <td><input type="password">  </td> </tr>
+					<tr> <td></td> <td><input type="submit" id="cadastro_bt" value="ENTRAR"> </td> </tr>
+				</table>
+			</form>
+		</div>
+		<div id="lightbox3"> <!--DIV onde fica o formulario de cadastro!-->
+			<h2>Faça o seu cadastro! </h2>
+			<table id="formulario">
+			<tr> <td>Nome</td> <td><input type="text"></td> </tr>
+			<tr> <td>E-mail</td> <td><input type="email"> </td> </tr>
+			<tr> <td>Sexo</td> <td><select id="select_list" name="sexo" size="1">
+			<option value="masculino">Masculino</option>
+	  		<option value="femenino">Femenino</option>
+			</select></td> </tr>
+			<tr> <td>Nacionalidade</td> <td><select id="select_list" name="pais">
+			<option value="angola">Angola</option>
+	  		<option value="brasil">Brasil</option>
+			</select></td> </tr>
+			<tr> <td>Password</td> <td><input type="password"> </td> </tr>
+			<tr> <td>Password</td> <td><input type="password"> </td> </tr>
+			<tr> <td></td> <td><input type="submit" value="CADASTRAR" id="cadastro_bt"></td> </tr>
+			</table>
+		</div>
+		<script language="javascript">
+			$("#lightbox3").hide();
+			$("#cadastro").click(function(){
+				$("#lightbox2").hide();
+				$("#lightbox3").show();
+			});
+			$("#login").click(function(){
+				$("#lightbox3").hide();
+				$("#lightbox2").show();
+			});
+		</script>
+
+        
+</body>
+</html>
