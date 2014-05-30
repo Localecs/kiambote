@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+			<title>Kiambote</title>
+			<meta charset="UTF-8">
+			<link type="text/css" rel="stylesheet" href="estilos/layout.css">
+			<script type="text/javascript" src="js/jQuery.js"></script>
+			<script type="text/javascript" src="js/acao.js"></script>
+			
+	
+ 
+</head>
+<body>
+	<header id="header">
+			<div class="wrap"><!--CENTRALIZA TUDO QUE ESTIVER DENTRO DO HEADER-->
+					<div id="logo"><img src="img/logo.png"></div>		
+					<div id="menu_div">
+
+						<nav id="menu">
+						<ul>
+							<li><a href="index.html">Inicio</a>
+							</li>
+							<li><a href="entretenimento.html">Entretenimento</a>
+							</li>
+							<li><a href="kinformacao.html">K-informação</a></li>
+							<li><a href="chat.html">Chat</a></li>
+							<li><a href="contacto.html">Contacte-nos</a></li>
+						</ul>	
+					</nav>
+					<div class="info_user"><a href="#" id="abrir">Entrar | Cadastro</a></div>
+					
+			</div>
+	</header>
+
+<div class="wrap"> <!--CENTRALIZA TODA PAGINA EXCEPTO O HEADER-->
+	<section id="destaque"> <!--DESTAQUE DA PAGINA-->
+		<ul>
+		<li>
+			<div class="dleft">
+			<img src="img/ht.png" width="580" height="270">
+		</div>
+		<div class="dright">
+			<h1 class="titulo_dest">Lorem Ipsum is the simple text </h1>
+			<p class="dese_dest">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.  </p>
+			<div class="sobre_dest"> 
+				Por: Flowck | Comentarios(15)
+			</div>
+		</div>
+		</li>
+
+	</ul>
+	</section><!--FIM DO DESTAQUE DA PAGINA-->
+		
+	<section id="content">
+		
+		<div id="hr"> </div>
+			<nav id="menu_content"> 
+				<ul> 
+					<li><a href="#" onClick="mostrar1 ()">+ RECENTES</a></li>
+					<li><a href="#" onClick="mostrar2 ()">+ COMENTADOS</a></li>
+					<li><a href="#" onClick="mostrar3 ()">- COMENTADOS</a></li>
+					<li><a href="#" onClick="mostrar4 ()">OS MAIS BONITOS</a></li>
+					<li><a href="#" onClick="mostrar5 ()">VIDA DE ELIANO</a></li>
+				</ul> 
+			</nav>
+
+			<div id="sub_content" style="display:block">
+				<div class="art_cat">
+					<article class="l"> <img src="img/ht.png" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Doriel é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Eliano | Comentarios(1150) | Em: 17-06-2012 18:18
+						</div>
+					</article> 
+				</div>
+				
+				<div class="art_cat2">
+					<article class="l"> <img src="img/Koala.jpg" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Thone é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Esmael | Comentarios(15150)
+						</div>
+					</article> 
+				</div>
+
+					<div class="art_cat">
+					<article class="l"> <img src="img/01.jpg" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Doriel é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Eliano | Comentarios(1150)
+						</div>
+					</article> 
+				</div>
+				
+				<div class="art_cat2">
+					<article class="l"> <img src="img/02.jpg" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Thone é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Esmael | Comentarios(15150)
+						</div>
+					</article> 
+				</div>
+
+					<div class="art_cat">
+					<article class="l"> <img src="img/03.jpg" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Doriel é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Eliano | Comentarios(1150)
+						</div>
+					</article> 
+				</div>
+				
+				<div class="art_cat2">
+					<article class="l"> <img src="img/04.jpg" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Thone é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Esmael | Comentarios(15150)
+						</div>
+					</article> 
+				</div>
+
+			</div>
+
+			<div id="sub_content2" style="display:none">
+				<div class="art_cat">
+					<article class="l"> <img src="img/ht.png" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Doriel é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Eliano | Comentarios(1150)
+						</div>
+					</article> 
+				</div>
+				
+				<div class="art_cat2">
+					<article class="l"> <img src="img/Koala.jpg" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Thone é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Esmael | Comentarios(15150)
+						</div>
+					</article> 
+				</div>
+
+					<div class="art_cat">
+					<article class="l"> <img src="img/ht.png" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Doriel é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Eliano | Comentarios(1150)
+						</div>
+					</article> 
+				</div>
+				
+				<div class="art_cat2">
+					<article class="l"> <img src="img/ht.png" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Thone é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Esmael | Comentarios(15150)
+						</div>
+					</article> 
+				</div>
+
+					<div class="art_cat">
+					<article class="l"> <img src="img/ht.png" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Doriel é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Eliano | Comentarios(1150)
+						</div>
+					</article> 
+				</div>
+				
+				<div class="art_cat2">
+					<article class="l"> <img src="img/ht.png" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Thone é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Esmael | Comentarios(15150)
+						</div>
+					</article> 
+				</div>
+
+			</div>
+
+			<div id="sub_content3" style="display:none">
+				<div class="art_cat">
+					<article class="l"> <img src="img/ht.png" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Doriel é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Eliano | Comentarios(1150)
+						</div>
+					</article> 
+				</div>
+				
+				<div class="art_cat2">
+					<article class="l"> <img src="img/Koala.jpg" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Thone é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Esmael | Comentarios(15150)
+						</div>
+					</article> 
+				</div>
+
+					<div class="art_cat">
+					<article class="l"> <img src="img/ht.png" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Doriel é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Eliano | Comentarios(1150)
+						</div>
+					</article> 
+				</div>
+				
+				<div class="art_cat2">
+					<article class="l"> <img src="img/ht.png" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Thone é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Esmael | Comentarios(15150)
+						</div>
+					</article> 
+				</div>
+
+					<div class="art_cat">
+					<article class="l"> <img src="img/ht.png" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Doriel é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Eliano | Comentarios(1150)
+						</div>
+					</article> 
+				</div>
+				
+				<div class="art_cat2">
+					<article class="l"> <img src="img/ht.png" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Thone é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Esmael | Comentarios(15150)
+						</div>
+					</article> 
+				</div>
+
+			</div>
+
+			<div id="sub_content4" style="display:none">
+					<div class="art_cat">
+					<article class="l"> <img src="img/ht.png" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Doriel é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Eliano | Comentarios(1150)
+						</div>
+					</article> 
+				</div>
+				
+				<div class="art_cat2">
+					<article class="l"> <img src="img/Koala.jpg" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Thone é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Esmael | Comentarios(15150)
+						</div>
+					</article> 
+				</div>
+
+					<div class="art_cat">
+					<article class="l"> <img src="img/ht.png" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Doriel é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Eliano | Comentarios(1150)
+						</div>
+					</article> 
+				</div>
+				
+				<div class="art_cat2">
+					<article class="l"> <img src="img/ht.png" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Thone é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Esmael | Comentarios(15150)
+						</div>
+					</article> 
+				</div>
+
+					<div class="art_cat">
+					<article class="l"> <img src="img/ht.png" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Doriel é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Eliano | Comentarios(1150)
+						</div>
+					</article> 
+				</div>
+				
+				<div class="art_cat2">
+					<article class="l"> <img src="img/ht.png" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Thone é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Esmael | Comentarios(15150)
+						</div>
+					</article> 
+				</div>
+
+			</div>
+
+			<div id="sub_content5" style="display:none">
+				<div class="art_cat">
+					<article class="l"> <img src="img/ht.png" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Doriel é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Eliano | Comentarios(1150)
+						</div>
+					</article> 
+				</div>
+				
+				<div class="art_cat2">
+					<article class="l"> <img src="img/Koala.jpg" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Thone é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Esmael | Comentarios(15150)
+						</div>
+					</article> 
+				</div>
+
+					<div class="art_cat">
+					<article class="l"> <img src="img/ht.png" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Doriel é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Eliano | Comentarios(1150)
+						</div>
+					</article> 
+				</div>
+				
+				<div class="art_cat2">
+					<article class="l"> <img src="img/ht.png" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Thone é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Esmael | Comentarios(15150)
+						</div>
+					</article> 
+				</div>
+
+					<div class="art_cat">
+					<article class="l"> <img src="img/ht.png" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Doriel é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Eliano | Comentarios(1150)
+						</div>
+					</article> 
+				</div>
+				
+				<div class="art_cat2">
+					<article class="l"> <img src="img/ht.png" width="140" height="100" alt=""> </article>
+					<article class="r">
+						<h2>Thone é panina </h2> 
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+				
+						<div class="sobre_art"> 
+							Por: Esmael | Comentarios(15150)
+						</div>
+					</article> 
+				</div>
+
+			</div>
+
+	</section>	
+	
+	<aside>
+		<div id="hr"> </div>
+	</aside>
+
+	<section id="lado_ass">
+		<h3>Resultados do sistema de Votação</h3> 
+	</section>
+
+	<section id="lado_ass_2">
+
+	</section>
+</div>
+
+
+</div>
+		<footer id="rodape"><div class="wrap2"> Kiambote &copy; 2012 - Todos os direitos reservdos aos EFBD | <a href="">Sobre</a> | <a href="">Contacto</a> </div></footer>
+        
+        <div id="nero">
+	</div>
+	<div class="messaggio">
+		<img src="img/fechar.gif" alt="Botão de fechar"  id="chiudi" />
+		<div id="nav_lightbox">
+			<ul> 
+				<a href="#"><li id="login">LOGIN</li> </a>
+				<a href="#"><li id="cadastro">CADASTRO</li> </a>
+			</ul>
+		</div>
+		<div id="lightbox2"> 
+				<h2>Faça o Login! </h2>
+			<form> 
+				<table id="formulario"> 
+					<tr> <td>E-mail </td> <td><input type="email"> </td> </tr>
+					<tr> <td>Password </td> <td><input type="password">  </td> </tr>
+					<tr> <td></td> <td><input type="submit" id="cadastro_bt" value="ENTRAR"> </td> </tr>
+				</table>
+			</form>
+		</div>
+		<div id="lightbox3"> <!--DIV onde fica o formulario de cadastro!-->
+			<h2>Faça o seu cadastro! </h2>
+			<table id="formulario">
+			<tr> <td>Nome</td> <td><input type="text"></td> </tr>
+			<tr> <td>E-mail</td> <td><input type="email"> </td> </tr>
+			<tr> <td>Sexo</td> <td><select id="select_list" name="sexo" size="1">
+			<option value="masculino">Masculino</option>
+	  		<option value="femenino">Femenino</option>
+			</select></td> </tr>
+			<tr> <td>Nacionalidade</td> <td><select id="select_list" name="pais">
+			<option value="angola">Angola</option>
+	  		<option value="brasil">Brasil</option>
+			</select></td> </tr>
+			<tr> <td>Password</td> <td><input type="password"> </td> </tr>
+			<tr> <td>Password</td> <td><input type="password"> </td> </tr>
+			<tr> <td></td> <td><input type="submit" value="CADASTRAR" id="cadastro_bt"></td> </tr>
+			</table>
+		</div>
+		<script language="javascript">
+			$("#lightbox3").hide();
+			$("#cadastro").click(function(){
+				$("#lightbox2").hide();
+				$("#lightbox3").show();
+			});
+			$("#login").click(function(){
+				$("#lightbox3").hide();
+				$("#lightbox2").show();
+			});
+		</script>
+
+        
+</body>
+</html>
